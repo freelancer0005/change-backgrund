@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button>Red</button>
+    <button>Blue</button>
+    <button>Green</button>
+    <button>Black</button>
+    <button>Yellow</button>
+    <button>Brown</button>
+    <button>magenta</button>
+
+    <script>
+        let body = document.querySelector('body')
+        for (let i = 0; i < 8; i++) {
+            let a = document.querySelectorAll('button')[i]
+            a.addEventListener('click', function(){
+            body.style.backgroundColor = a.innerText
+        })
+        }
+                     
+
+
+        // let a = document.querySelectorAll('button')[0]
+        // let b = document.querySelectorAll('button')[1]
+        // let c = document.querySelectorAll('button')[2]
+        // let d = document.querySelectorAll('button')[3]
+        // let body = document.querySelector('body')
+
+        // a.addEventListener('click', function(){
+        //     body.style.backgroundColor = a.innerText
+        // })
+        // b.addEventListener('click', function(){
+        //     body.style.backgroundColor = b.innerText
+        // })
+        // c.addEventListener('click', function(){
+        //     body.style.backgroundColor = c.innerText
+        // })
+        // d.addEventListener('click', function(){
+        //     body.style.backgroundColor = d.innerText
+        // })
+
+        
+    </script>
+    
+</body>
+</html>
